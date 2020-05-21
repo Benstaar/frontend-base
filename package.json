@@ -4,7 +4,10 @@
   "description": "Base setup for frontend development.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx cross-env NODE_ENV=development webpack-dev-server --mode development --hot --liveReload --host 0.0.0.0",
+    "build": "npx cross-env NODE_ENV=production webpack --mode production",
+    "serve": "npm run build && npx http-server dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,35 @@
   "bugs": {
     "url": "https://github.com/Benstaar/frontend-base/issues"
   },
-  "homepage": "https://github.com/Benstaar/frontend-base#readme"
+  "homepage": "https://github.com/Benstaar/frontend-base#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "svg-url-loader": "^5.0.0",
+    "terser-webpack-plugin": "^3.0.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
 }
