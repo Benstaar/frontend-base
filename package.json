@@ -1,0 +1,19 @@
+{
+  "name": "frontend-base",
+  "version": "1.0.0",
+  "description": "Base setup for frontend development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benstaar/frontend-base.git"
+  },
+  "author": "Benstaar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benstaar/frontend-base/issues"
+  },
+  "homepage": "https://github.com/Benstaar/frontend-base#readme"
+}
