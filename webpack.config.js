@@ -59,6 +59,7 @@ module.exports = {
           context: 'src',
           publicPath: publicPath + '/assets/',
           outputPath: 'assets/',
+          esModule: false,
           limit: 1 * 1024 //1KB
         }
       }, {
@@ -69,6 +70,7 @@ module.exports = {
           context: 'src',
           publicPath: publicPath + '/assets/',
           outputPath: 'assets/',
+          esModule: false,
           limit: 1 * 1024 //1KB
         }
       }, {
